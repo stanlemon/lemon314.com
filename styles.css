@@ -1,0 +1,185 @@
+/* Base page styles - replaces body attributes on all pages */
+body {
+  background-color: #FFFFCC;
+  margin: 5px;
+  padding: 0;
+}
+a:link { color: #008000; }
+a:visited { color: #C0C0C0; }
+
+/* answers.html uses topmargin="8" leftmargin="8" */
+body.margin-8 {
+  margin: 8px;
+}
+
+/* === Main layout table (used on most pages) === */
+/* Replaces: <table border="0" cellspacing="0" width="100%" cellpadding="12"> */
+.layout-table {
+  border: none;
+  border-spacing: 0;
+  width: 100%;
+}
+.layout-table > tbody > tr > td {
+  padding: 12px;
+}
+
+/* biography.html layout table has border="1" style="border-collapse: collapse" bordercolor="#111111" */
+.layout-table-bordered {
+  border: 1px solid #111111;
+  border-collapse: collapse;
+  width: 100%;
+}
+.layout-table-bordered > tbody > tr > td {
+  padding: 12px;
+  border: 1px solid #111111;
+}
+
+/* index.html layout table: border="0" but has style="border-collapse: collapse" bordercolor="#111111" */
+.layout-table-collapse {
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+}
+.layout-table-collapse > tbody > tr > td {
+  padding: 12px;
+}
+
+/* === Sidebar menu === */
+/* Replaces: <table border="1" cellspacing="8" bordercolor="#008000" bgcolor="#FFFFFF"> */
+.sidebar-menu {
+  border: 1px solid #008000;
+  border-spacing: 8px;
+  background-color: #FFFFFF;
+}
+.sidebar-menu td {
+  background-color: #008000;
+  text-align: center;
+}
+.sidebar-menu a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/* === Footer navigation === */
+/* Replaces: <table border="1" cellspacing="8" bordercolor="#008000" width="100%"> */
+.footer-nav {
+  border: 1px solid #008000;
+  border-spacing: 8px;
+  width: 100%;
+}
+.footer-nav td {
+  background-color: #CCFFCC;
+  text-align: center;
+  font-weight: bold;
+}
+.footer-nav .copyright {
+  font-size: small;
+  text-align: center;
+}
+
+/* === Banner === */
+.banner {
+  text-align: center;
+}
+
+/* === Font size utility classes === */
+/* These replace <font size="N"> tags */
+.fs-2 { font-size: small; }
+.fs-4 { font-size: large; }
+.fs-5 { font-size: x-large; }
+.fs-6 { font-size: xx-large; }
+
+/* === Font face utility classes === */
+.font-arial { font-family: Arial, sans-serif; }
+.font-californian { font-family: "Californian FB", serif; }
+
+/* === Webpages table === */
+/* Replaces: <table border="2" cellpadding="2" bgcolor="#FFFFFF" bordercolorlight="#000000" bordercolordark="#000000" cellspacing="1" width="80%"> */
+.sites-table {
+  border: 2px solid #000000;
+  border-spacing: 1px;
+  background-color: #FFFFFF;
+  width: 80%;
+}
+.sites-table td {
+  padding: 2px;
+}
+.sites-table .header-cell {
+  background-color: #008000;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: x-large;
+}
+.sites-table .name-cell {
+  background-color: #CCFFCC;
+  font-weight: bold;
+  vertical-align: top;
+  width: 30%;
+}
+
+/* === Photo gallery table === */
+.gallery-table {
+  border: 1px solid #000000;
+  width: 90%;
+  background-color: #FFFFFF;
+}
+.gallery-table td, .gallery-table th {
+  padding: 4px;
+}
+.gallery-table .gallery-header {
+  background-color: #008000;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+/* === Press articles table === */
+.press-table {
+  border: 1px solid;
+  border-spacing: 1px;
+}
+.press-table td {
+  font-family: Arial, sans-serif;
+  font-size: small;
+}
+
+/* === Family history tables === */
+.family-info-table {
+  border: 1px solid #000000;
+  border-spacing: 1px;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+.family-info-table td {
+  padding: 2px;
+}
+
+/* === Puns page tables === */
+.puns-extra-table {
+  border: none;
+  border-spacing: 1px;
+  width: 80%;
+}
+.puns-extra-table td {
+  padding: 8px;
+  text-align: center;
+}
+.puns-bottom-table {
+  border: none;
+  border-spacing: 5px;
+}
+
+/* === Resume content area === */
+.resume-content {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* === Audio element (replaces <bgsound>) === */
+.bg-audio {
+  display: block;
+  margin: 10px auto;
+  width: 250px;
+}
