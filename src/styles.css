@@ -23,16 +23,6 @@ body.margin-8 {
   padding: 12px;
 }
 
-/* biography.html layout table has border="1" style="border-collapse: collapse" bordercolor="#111111" */
-.layout-table-bordered {
-  border: 1px solid #111111;
-  border-collapse: collapse;
-  width: 100%;
-}
-.layout-table-bordered > tbody > tr > td {
-  padding: 12px;
-  border: 1px solid #111111;
-}
 
 /* index.html layout table: border="0" but has style="border-collapse: collapse" bordercolor="#111111" */
 .layout-table-collapse {
