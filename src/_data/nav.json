@@ -4,7 +4,6 @@
   { "label": "Answers",     "url": "/answers.html" },
   { "label": "Resume",      "url": "/resume.html" },
   { "label": "Webpages",    "url": "/webpages.html",     "title": "Links to other websites constructed by the author of this site." },
-  { "label": "eMail",       "url": "mailto:lemon@wegonews.com?subject=From Personal Page", "title": "Send Email to Robert Lemon..." },
   { "label": "Photos",      "url": "/photogallery.html", "title": "Photos of the family and stuff." },
   { "label": "Biography",   "url": "/biography.html",    "title": "A short biography of Robert Lemon, the author of this site." },
   { "label": "Family Tree", "url": "/familyhistory.html" }
