@@ -12,6 +12,12 @@ _vti_pvt/
 screenshots-before/
 screenshots-after/
 
+# 11ty output
+_site/
+
+# Node
+node_modules/
+
 # Editor
 .vscode/
 *.swp

@@ -1,0 +1,25 @@
+{
+  "name": "lemon314.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanlemon/lemon314.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/stanlemon/lemon314.com/issues"
+  },
+  "homepage": "https://github.com/stanlemon/lemon314.com#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  }
+}

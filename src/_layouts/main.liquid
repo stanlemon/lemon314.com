@@ -1,0 +1,41 @@
+---
+layout: base
+---
+<table class="{{ tableClass | default: 'layout-table' }}">
+  <tr>
+    <td colspan="2" valign="top">
+    <p align="center"><a href="http://www.robertlemon.name">
+    <img border="0" src="/images/graphics/banner.gif" width="685" height="115"></a></td>
+  </tr>
+  <tr>
+    <td valign="top">
+<table class="sidebar-menu">
+  {% for item in nav %}
+  <tr>
+    <td><b><a href="{{ item.url }}"{% if item.title %} title="{{ item.title }}"{% endif %}>{{ item.label }}</a></b></td>
+  </tr>
+  {% endfor %}
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  </table>
+
+<p>&nbsp;</td>
+    <td valign="top"{% if contentClass %} class="{{ contentClass }}"{% endif %}>{{ content }}</td>
+  </tr>
+</table>
+{% unless hideFooter %}
+<table class="footer-nav">
+  <tr>
+    {% for item in nav %}
+    <td><a href="{{ item.url }}"{% if item.title %} title="{{ item.title }}"{% endif %}>{{ item.label }}</a></td>
+    {% endfor %}
+  </tr>
+  <tr>
+    <td align="center" colspan="9" class="copyright">
+    <b>All rights reserved by:
+    <a target="_blank" href="http://www.wegonews.com/lemon314/">Robert Lemon</a>,
+    527 Claremont, West Chicago, IL 60185-2107 - &nbsp;ph 630-231-3152.</b></td>
+  </tr>
+  </table>
+{% endunless %}
