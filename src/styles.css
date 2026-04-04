@@ -72,6 +72,19 @@ body.margin-8 {
   text-align: center;
 }
 
+/* === Visually hidden (screen-reader only) === */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* === Semantic heading reset === */
 /* Allow h1-h6 to inherit size/spacing from context; fs-* classes control actual size */
 h1, h2, h3, h4, h5, h6 {
