@@ -2,8 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }}</title>
+  {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
+
   <link rel="stylesheet" href="/styles.css">
+
+  <!-- Person schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Robert Lemon",
+    "url": "{{ site.url }}",
+    "description": "Retired mathematics teacher with 27 years at Community High School District 94, computer instructor at College of DuPage, and community servant in West Chicago, Illinois.",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Northern Michigan University"
+    },
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Mathematics Teacher"
+    },
+    "knowsAbout": ["Mathematics", "Education", "Community Service", "Local Government"]
+  }
+  </script>
 </head>
 <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
 {{ content }}
