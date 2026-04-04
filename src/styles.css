@@ -152,7 +152,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* === Press articles table === */
 .press-table {
-  border: 1px solid;
   border-spacing: 1px;
 }
 .press-table td {
@@ -188,7 +187,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* === Resume content area === */
 .resume-content {
-  background-color: #FFFFFF;
   color: #000000;
 }
 
