@@ -22,7 +22,6 @@ layout: base
     <td valign="top"{% if contentClass %} class="{{ contentClass }}"{% endif %}>{{ content }}</td>
   </tr>
 </table>
-{% unless hideFooter %}
 <table class="footer-nav">
   <tr>
     {% for item in nav %}
@@ -34,4 +33,3 @@ layout: base
     <b>All rights reserved by: Robert Lemon</b></td>
   </tr>
   </table>
-{% endunless %}
