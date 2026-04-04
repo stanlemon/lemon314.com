@@ -12,6 +12,7 @@
   <meta property="og:title" content="{{ title }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
+  <meta property="og:image" content="{{ site.url }}/images/graphics/banner.gif">
 
   <link rel="stylesheet" href="/styles.css">
 
@@ -31,9 +32,30 @@
       "@type": "Occupation",
       "name": "Mathematics Teacher"
     },
-    "knowsAbout": ["Mathematics", "Education", "Community Service", "Local Government"]
+    "knowsAbout": ["Mathematics", "Education", "Community Service", "Local Government"],
+    "homeLocation": {
+      "@type": "Place",
+      "name": "West Chicago, Illinois"
+    },
+    "jobTitle": "Retired Mathematics Teacher"
   }
   </script>
+  {% if schemaType == "NewsArticle" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "{{ title }}",
+    "url": "{{ site.url }}{{ page.url }}"{% if articleDate %},
+    "datePublished": "{{ articleDate }}"{% endif %},
+    "about": {
+      "@type": "Person",
+      "name": "Robert Lemon",
+      "url": "{{ site.url }}"
+    }
+  }
+  </script>
+  {% endif %}
 </head>
 <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
 {{ content }}
