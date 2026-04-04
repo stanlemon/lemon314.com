@@ -2,6 +2,7 @@ import Image from "@11ty/eleventy-img";
 import path from "path";
 
 async function imageShortcode(src, alt, widths = [null], sizes = "100vw") {
+  if (!Array.isArray(widths)) widths = [widths];
   // Resolve relative to the src input dir
   const inputPath = src.startsWith("/") ? `./src${src}` : `./src/${src}`;
   let metadata = await Image(inputPath, {
