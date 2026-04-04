@@ -72,6 +72,18 @@ body.margin-8 {
   text-align: center;
 }
 
+/* === Semantic heading reset === */
+/* Allow h1-h6 to inherit size/spacing from context; fs-* classes control actual size */
+h1, h2, h3, h4, h5, h6 {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  padding: 0;
+  font-size: inherit;
+  font-weight: bold;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
 /* === Font size utility classes === */
 /* These replace <font size="N"> tags */
 .fs-2 { font-size: small; }
