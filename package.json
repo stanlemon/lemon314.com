@@ -1,6 +1,6 @@
 {
   "name": "lemon314.com",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
   "homepage": "https://github.com/stanlemon/lemon314.com#readme",
   "dependencies": {
     "@11ty/eleventy": "^3.1.7",
-    "@11ty/eleventy-img": "^7.1.0"
+    "@11ty/eleventy-img": "^7.1.1"
   }
 }
