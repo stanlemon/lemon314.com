@@ -13,6 +13,7 @@ npm install
 ```bash
 npm start        # serve with live reload at http://localhost:8080
 npm run build    # build to _site/
+npm test         # clean build and generated-site regression tests
 ```
 
 ## Structure
@@ -33,3 +34,7 @@ _site/           # generated output (gitignored)
 - Edit `src/_data/nav.json` to update navigation across all pages
 - Edit `src/_layouts/main.liquid` to change the shared banner/sidebar/footer
 - Press reports inherit layout via `src/pressreports/pressreports.json`
+
+## Regression tests
+
+Run `npm test` to build from an empty `_site/` and test the generated output. The tests cover routes, navigation, local assets, canonical URLs, and the sitemap. The tests also preserve the pun image maps and family history content. GitHub Actions runs this command for pull requests, `main`, and Renovate branches.
