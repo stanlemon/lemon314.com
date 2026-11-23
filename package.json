@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "clean": "node --input-type=module -e \"import { rmSync } from 'node:fs'; rmSync('_site', { recursive: true, force: true });\"",
+    "pretest": "npm run clean && npm run build",
+    "test": "node --test tests/GeneratedSiteTest.js"
   },
   "repository": {
     "type": "git",
