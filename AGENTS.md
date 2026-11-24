@@ -25,7 +25,6 @@ npm start        # dev server with live reload
 | `tableClass` | `layout-table` (default), `layout-table-collapse`, or `layout-table-bordered` |
 | `bodyClass` | e.g. `margin-8` (answers.html only) |
 | `contentClass` | classes on the content `<td>` (e.g. `resume-content font-arial fs-2`) |
-| `hideFooter` | `true` to suppress footer nav (index.html only) |
 
 ## Key constraints
 
